@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-29 03:33:05.458426",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "color_kbzp",
+  "name",
+  "seated",
+  "desv"
+ ],
+ "fields": [
+  {
+   "fieldname": "color_kbzp",
+   "fieldtype": "Color",
+   "label": "Color"
+  },
+  {
+   "fieldname": "name",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "seated",
+   "fieldtype": "Select",
+   "label": "Seated",
+   "options": "2\n4\n6"
+  },
+  {
+   "fieldname": "desv",
+   "fieldtype": "Text",
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-29 03:45:30.770243",
+ "modified_by": "Administrator",
+ "module": "Hussam Com",
+ "name": "Car",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
