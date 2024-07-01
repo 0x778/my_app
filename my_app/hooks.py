@@ -135,7 +135,12 @@ override_doctype_class = {
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
+scheduler_events = {
+	"cron":{
+		"0 0 * * *":[
+				"my_app.overrides.SalesOrder.Updatedaysleft"
+		]
+	}
 # 	"all": [
 # 		"my_app.tasks.all"
 # 	],
@@ -151,7 +156,7 @@ override_doctype_class = {
 # 	"monthly": [
 # 		"my_app.tasks.monthly"
 # 	],
-# }
+}
 
 # Testing
 # -------

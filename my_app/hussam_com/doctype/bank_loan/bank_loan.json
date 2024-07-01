@@ -1,0 +1,153 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-07-01 17:02:37.590959",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_ddu7",
+  "amended_from",
+  "naming_series",
+  "bank_name",
+  "column_break_dbmf",
+  "company",
+  "posting_date",
+  "status",
+  "section_break_hx4f",
+  "loan_amount",
+  "interest",
+  "repayment_months",
+  "monthly_repayment",
+  "section_break_k14q",
+  "loan_account",
+  "disburment_account",
+  "column_break_vwab",
+  "repayment_account"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_ddu7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Bank Loan",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "LOAN-.YYYY.-"
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Data",
+   "label": "Bank Name"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "default": "now",
+   "fieldname": "posting_date",
+   "fieldtype": "Data",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "status"
+  },
+  {
+   "fieldname": "column_break_dbmf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_hx4f",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "loan_amount",
+   "fieldtype": "Currency",
+   "label": "Loan Amount"
+  },
+  {
+   "fieldname": "interest",
+   "fieldtype": "Float",
+   "label": "Interest"
+  },
+  {
+   "fieldname": "repayment_months",
+   "fieldtype": "Int",
+   "label": "Repayment months"
+  },
+  {
+   "fieldname": "monthly_repayment",
+   "fieldtype": "Data",
+   "label": "Monthly repayment"
+  },
+  {
+   "fieldname": "section_break_k14q",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "loan_account",
+   "fieldtype": "Link",
+   "label": "Loan Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "disburment_account",
+   "fieldtype": "Link",
+   "label": "Disburment Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "column_break_vwab",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "repayment_account",
+   "fieldtype": "Link",
+   "label": "Repayment Account",
+   "options": "Account"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-07-01 18:07:47.270096",
+ "modified_by": "Administrator",
+ "module": "Hussam Com",
+ "name": "Bank Loan",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
