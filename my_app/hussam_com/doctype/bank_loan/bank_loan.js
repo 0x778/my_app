@@ -24,7 +24,7 @@ loan_amount : function(frm){
 function calculate(frm){
     if(frm.doc.loan_amount && frm.doc.repayment_months){
         let amount = frm.doc.loan_amount / frm.doc.repayment_months ;
-       // amount = amount + amount *  frm.doc.interest / 100 ;
+        amount = amount + amount *  frm.doc.interest / 100 ;
         frm.doc.monthly_repayment = amount ;
         //console.log(frm.doc.monthly_repayment);
         refresh_field("monthly_repayment");
